@@ -289,18 +289,35 @@
             </objects>
             <point key="canvasLocation" x="-411" y="2057"/>
         </scene>
-        <!--View Controller-->
+        <!--Feed View Controller-->
         <scene sceneID="xnJ-nz-4Cc">
             <objects>
-                <viewController id="bVN-Dn-47O" sceneMemberID="viewController">
+                <viewController id="bVN-Dn-47O" customClass="feedViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s77-gS-qMp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thrillist_detail" id="pgr-TG-X0E">
-                                <rect key="frame" x="0.0" y="57" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="DHP-R6-0zK">
+                                <rect key="frame" x="0.0" y="64" width="334" height="410"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thrillist_detail" id="goV-g2-nJA">
+                                        <rect key="frame" x="-8" y="0.0" width="334" height="410"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WIN-Zr-2Wu">
+                                <rect key="frame" x="24" y="416" width="44" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="like" image="like_btn">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="like_btn_selected">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav_back" id="1Ys-Bf-xnS">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -315,21 +332,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WIN-Zr-2Wu">
-                                <rect key="frame" x="24" y="416" width="44" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <state key="normal" title="like" image="like_btn">
-                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" image="like_btn_selected">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="EF3-sV-CeQ"/>
+                    <connections>
+                        <outlet property="imageView" destination="goV-g2-nJA" id="SJG-jl-zgG"/>
+                        <outlet property="scrollView" destination="DHP-R6-0zK" id="B3P-BE-57Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="coJ-iw-5gz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -363,18 +373,14 @@
             </objects>
             <point key="canvasLocation" x="-450" y="2891"/>
         </scene>
-        <!--View Controller-->
+        <!--Photo View Controller-->
         <scene sceneID="YwE-b0-lYA">
             <objects>
-                <viewController id="hGx-LJ-DFf" sceneMemberID="viewController">
+                <viewController id="hGx-LJ-DFf" customClass="photoViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gcG-Qy-CEU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="create_photo" id="upS-dl-3Wm">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HjQ-8v-vMW">
                                 <rect key="frame" x="0.0" y="0.0" width="83" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -382,9 +388,23 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3a3-0D-5A8">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="create_photo" id="bME-oX-Wey">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="bME-oX-Wey" id="BmT-3K-Mf1"/>
+                        <outlet property="scrollView" destination="3a3-0D-5A8" id="AaP-28-T9B"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jkO-xA-ced" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
