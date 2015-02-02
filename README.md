@@ -44,6 +44,6 @@ get things to scroll
 get views to exit , modal transitions  back
 
 
-![Video Walkthrough](https://github.com/mayavenkatraman/Week1/blob/master/week1-take2Mon.gif)
+![Video Walkthrough](https://github.com/mayavenkatraman/fb-2-feb1/blob/master/fb-2-feb1/fb-feb1.gif)
 
 
