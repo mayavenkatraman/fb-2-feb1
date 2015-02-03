@@ -1,5 +1,5 @@
 //
-//  photoViewController.swift
+//  requestsViewController.swift
 //  fb-2-feb1
 //
 //  Created by Maya Venkatraman on 2/2/15.
@@ -8,11 +8,17 @@
 
 import UIKit
 
-class photoViewController: UIViewController {
+class requestsViewController: UIViewController {
 
+    @IBOutlet weak var scrollVIew: UIScrollView!
+    
+    @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+ 
+        scrollVIew.contentSize = imageView.image!.size
 
+        
         // Do any additional setup after loading the view.
     }
 
@@ -21,9 +27,6 @@ class photoViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func didPressCancelButton(sender: AnyObject) {
-         dismissViewControllerAnimated(true, completion: nil)
-    }
 
     /*
     // MARK: - Navigation

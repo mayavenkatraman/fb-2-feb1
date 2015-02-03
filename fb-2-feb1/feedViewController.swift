@@ -1,21 +1,22 @@
 //
-//  NotificationsViewController.swift
+//  feedViewController.swift
 //  fb-2-feb1
 //
-//  Created by Maya Venkatraman on 2/1/15.
+//  Created by Maya Venkatraman on 2/2/15.
 //  Copyright (c) 2015 Maya Venkatraman. All rights reserved.
 //
 
 import UIKit
 
-class NotificationsViewController: UIViewController {
+class feedViewController: UIViewController {
 
+    @IBOutlet weak var scrollView: UIScrollView!
     
-       override func viewDidLoad() {
+    @IBOutlet weak var imageView: UIImageView!
+    override func viewDidLoad() {
         super.viewDidLoad()
-        
-      
-       
+        scrollView.contentSize = imageView.image!.size
+
         // Do any additional setup after loading the view.
     }
 

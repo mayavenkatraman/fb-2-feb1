@@ -1,5 +1,5 @@
 //
-//  photoViewController.swift
+//  checkinViewController.swift
 //  fb-2-feb1
 //
 //  Created by Maya Venkatraman on 2/2/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class photoViewController: UIViewController {
+class checkinViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +22,7 @@ class photoViewController: UIViewController {
     }
     
     @IBAction func didPressCancelButton(sender: AnyObject) {
+        
          dismissViewControllerAnimated(true, completion: nil)
     }
 

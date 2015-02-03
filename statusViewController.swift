@@ -1,26 +1,20 @@
 //
-//  RequestsViewController.swift
+//  statusViewController.swift
 //  fb-2-feb1
 //
-//  Created by Maya Venkatraman on 2/1/15.
+//  Created by Maya Venkatraman on 2/2/15.
 //  Copyright (c) 2015 Maya Venkatraman. All rights reserved.
 //
 
 import UIKit
 
-class RequestsViewController: UIViewController {
+class statusViewController: UIViewController {
 
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-       
     }
-   
-
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -28,6 +22,11 @@ class RequestsViewController: UIViewController {
     }
     
 
+    
+    @IBAction func didPressCancelButton(sender: AnyObject) {
+         dismissViewControllerAnimated(true, completion: nil)
+    }
+   
     /*
     // MARK: - Navigation
 
