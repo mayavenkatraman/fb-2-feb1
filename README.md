@@ -18,11 +18,10 @@ Milestones:
 and a scroll view that contains an image view for the content of the tab. 
 Hide the navigation bar of each navigation controller. DONE
 3.Scrollable views: Since you have to set the content size of the scroll view in code, you have to create a 
-custom view controller for each screen (e.g., FeedViewController, MessagesViewController, etc) 
+custom view controller for each screen (e.g., FeedViewController, MessagesViewController, etc) [DONE request page]
 3. Scroll ViewsFor the FeedViewController, add an additional image view that contains 
 the compose buttons for status, photos, and check ins. [DONE]
 
-Summary for this section: All set up is done. Cant get anything to scroll :( 
 
 4. Story Detail View : Add a invisible button to the Thrillist post that takes you to a detail page. DONE
 4. Story Detail View: The Thrillist Detail View Controllers, should have an image view for the custom navigation bar, 
@@ -31,19 +30,16 @@ a scrollview for the content, and an image view for the compose.[DONE]
 
 5 Posting: Tapping the Status, Photo, or Check In buttons from the feed page should modally 
 present the respective compose view controllers. [DONE]
-5 Posting: Tapping cancel on each view controller should dismiss the view controller. 
+5 Posting: Tapping cancel on each view controller should dismiss the view controller. [DONE]
 
 Bounus : 
 I got the keyboard to appear.. 
-would be great to get the text field to animate up as well because that is in the honeydo app we are bulding 
 
-Time so far : 3.5 hours ? 
-
-Still need to do : 
-get things to scroll
-get views to exit , modal transitions  back
+Time so far : 4.5 hours ? 
 
 
-![Video Walkthrough](https://github.com/mayavenkatraman/fb-2-feb1/blob/master/fb-2-feb1/fb-feb1.gif)
+
+
+![Video Walkthrough](https://github.com/mayavenkatraman/fb-2-feb1/blob/master/fb-2-feb1/fb-feb2.gif)
 
 
